@@ -13,8 +13,8 @@ const sideDrawer = (props) =>{
     return(
         <Auxi>
             <Backdrop show={props.open} clicked={props.closed}/>
-            <div className={classes.SideDrawer}>
-                <div className={attachedClasses.join(' ')}>
+            <div className={attachedClasses.join(' ')}>
+                <div className={classes.Logo}>
                     <Logo />
                 </div>
                 <nav>
