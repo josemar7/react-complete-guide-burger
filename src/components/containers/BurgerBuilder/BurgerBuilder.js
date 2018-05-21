@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Auxi from '../../hoc/Auxi';
-import Burger from '../Burger/Burger';
-import BuildControls from '../Burger/BuildControls/BuildControls';
-import Modal from '../UI/Modal/Modal';
-import OrderSummary from '../Burger/OrderSummary/OrderSummary';
+import Auxi from '../../../hoc/Auxi/Auxi';
+import Burger from '../../Burger/Burger';
+import BuildControls from '../../Burger/BuildControls/BuildControls';
+import Modal from '../../UI/Modal/Modal';
+import OrderSummary from '../../Burger/OrderSummary/OrderSummary';
 
 const INGREDIENT_PRICES = {
     salad: 0.5,
@@ -93,7 +93,7 @@ class BurgerBuilder extends Component {
             disabledInfo[key] = disabledInfo[key] <= 0;
         }
         return (
-            <Auxi>
+            <Auxi>                
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
                     <OrderSummary 
                     ingredients={this.state.ingredients} 
