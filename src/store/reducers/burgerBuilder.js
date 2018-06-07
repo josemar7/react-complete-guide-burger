@@ -1,6 +1,5 @@
 import * as actionTypes from '../actions/actionTypes';
-import { stat } from 'fs';
-import {updateObject} from '../utility';
+import {updateObject} from '../../shared/utility';
 
 const initialState = {
     ingredients: null,
@@ -68,7 +67,6 @@ const reducer = (state = initialState, action) => {
         case actionTypes.FETCH_INGREDIENTS_FAILED: return fetchIngredientsFailed(state);            
         default: return state;         
     }
-    return state;
 };
 
 export default reducer;
